@@ -1,0 +1,33 @@
+.child-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    .card-title {
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      background-color: var(--black);
+      border-color: var(--black);
+      color: var(--white); // Ensure text is white
+
+      &:hover {
+        background-color: var(--black);
+        border-color: var(--black);
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.navbar {
+  background-color: var(--white) !important;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-link {
+  color: var(--black);
+  font-weight: 500;
+  font-size: 1.1rem; // Added font size
+  transition: color 0.3s ease;
+
+  &:hover,
+  &.active {
+    color: var(--black);
+  }
+}
+
+.btn-danger {
+  background-color: var(--red);
+  border-color: var(--red);
+
+  &:hover {
+    background-color: var(--red-dark);
+    border-color: var(--red-dark);
+  }
+}
+
+.dropdown-menu {
+  border-radius: 0.5rem;
+  border: 1px solid #eee;
+}
+
+.dropdown-item {
+  &:hover,
+  &.active {
+    background-color: var(--black);
+    color: var(--white);
+  }
+}

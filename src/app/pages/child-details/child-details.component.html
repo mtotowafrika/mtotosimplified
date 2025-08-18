@@ -1,0 +1,34 @@
+<div class="container my-5" *ngIf="child">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 text-center">
+      <h1 class="mb-4">{{ child.name }}'s Profile</h1>
+    </div>
+  </div>
+
+  <div class="row align-items-center">
+    <div class="col-md-6 text-center">
+      <img [src]="child.picturePath" class="img-fluid rounded-circle mb-4" [alt]="child.name">
+    </div>
+    <div class="col-md-6">
+      <div class="card child-details-card">
+        <div class="card-body">
+          <h5 class="card-title">Child Details</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Child's ID:</strong> {{ child.id }}</li>
+            <li class="list-group-item"><strong>Year of Birth:</strong> {{ child.yearOfBirth }}</li>
+            <li class="list-group-item"><strong>Grade:</strong> {{ child.grade }}</li>
+            <li class="list-group-item"><strong>Lives with:</strong> {{ child.livesWith }}</li>
+            <li class="list-group-item"><strong>No. of siblings:</strong> {{ child.numberOfSiblings }}</li>
+            <li class="list-group-item"><strong>School:</strong> {{ child.school }}</li>
+          </ul>
+          <button (click)="contact(child.name)" class="btn btn-primary rounded-pill mt-4">Sponsor {{ child.name }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5 text-center" *ngIf="!child">
+  <p class="lead">Child not found.</p>
+  <a routerLink="/programs/child-sponsorship" class="btn btn-secondary rounded-pill">Back to Child Sponsorship</a>
+</div>

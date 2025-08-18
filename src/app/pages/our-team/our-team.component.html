@@ -1,0 +1,121 @@
+<app-page-banner [title]="'Our Team'" [backgroundImage]="'assets/images/happy.jpg'"></app-page-banner>
+
+<section class="ftco-section p-3">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-6 bg-transparent ftco-animate">
+        <div class="col-md-8 mx-auto">
+          <img
+            src="assets/images/team/samuel.jpg"
+            class="img-fluid text-center p-3"
+            alt=""
+            srcset="" />
+        </div>
+
+        <div class="col-md-8 mx-auto">
+          <h4 class="text-center mtotored">Founder/ Executive&nbsp;Director</h4>
+          <p class="text-center">Samuel Sekibejja</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2 class="my-5 new-title-class p-3">Board of Directors</h2>
+            <p class="text-center">
+              Meet the dedicated team behind Mtoto W’Afrika Child Care
+              Ministries.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 ftco-animate mb-3" *ngFor="let member of teamMembers.slice(0, 4)">
+            <div class="team-member text-center">
+              <img
+                [src]="member.image"
+                class="img-fluid mb-4"
+                [alt]="member.name" />
+              <h3>{{ member.name }}</h3>
+              <p>{{ member.title }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2 class="my-5 new-title-class p-3">Volunteers</h2>
+            <p class="text-center">
+              Join our passionate team of volunteers and make a meaningful
+              impact with Mtoto W’Afrika Child Care Ministries.
+            </p>
+          </div>
+        </div>
+
+        <div class="row mx-auto justify-content-center text-center">
+          <div class="col-md-3 ftco-animate mb-3" *ngFor="let member of teamMembers.slice(4)">
+            <div class="team-member text-center">
+              <img
+                [src]="member.image"
+                class="img-fluid mb-4"
+                [alt]="member.name" />
+              <h3>{{ member.name }}</h3>
+              <p>{{ member.title }}</p>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="text-center py-5">
+          <a href="/contact" class="becomebtn btn text-white"
+            >Become a Volunteer
+            <span class="ms-5">
+              <i class="bi bi-arrow-right-circle" title="More details"></i>
+            </span>
+          </a>
+        </h1>
+      </div>
+    </section>
+
+    <div class="p-3 p-md-5">
+      <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/team1.jpg"
+              class="d-block w-100 img-fluid"
+              alt="Team 1" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/team2.jpg"
+              class="d-block w-100 img-fluid"
+              alt="Team 2" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/team3b.jpg"
+              class="d-block w-100 img-fluid"
+              alt="Team 3" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#teamCarousel"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#teamCarousel"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

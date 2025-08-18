@@ -1,0 +1,16 @@
+h2 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--white); // Set title color to white for contrast on background image
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: var(--white); // Set body text color to white for contrast on background image
+}
+
+// Remove previous overrides to allow background image to show through
+:host ::ng-deep .content-section .col-md-6 {
+  background-color: transparent !important; // Allow background image to show
+  color: inherit !important; // Inherit color from parent (which will be white)
+}

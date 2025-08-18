@@ -1,0 +1,20 @@
+<app-page-banner [title]="'Our History'" [backgroundImage]="'assets/images/happy.jpg'"></app-page-banner>
+
+<div class="content-section" style="background-image: url('assets/images/happy.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="my-4 display-4 p-3 fw-bold new-title-class" style="display: inline-block">Who we are</h2>
+        <p>Mtoto W’afrika Child Care Ministries was founded in 2013 by Samuel Sekibejja. In 2014, we received our fully incorporated NGO status. Our path toward transformation is hinged on the willingness and hope to spread the unconditional love of Jesus Christ to the next generation of future leaders in the hard-to-reach communities in Uganda, South Sudan, and East Africa.</p>
+        <p>This has been the greatest motivation behind the beautiful journey of the organization. Additionally, we focus on making a child well-rounded by providing education, computers, farming, animal caretaking, sewing, and various other life skills opportunities. Mtoto W’afrika Child Care Ministries also provides medical care to the children, their families, and the communities that it serves. The dream to develop these future leaders will be achieved by empowering the children through spiritual, educational, and mental development growth. Currently, we have reached over 2,000 children in Uganda and South Sudan with these growth milestones.<br />
+          <button (click)="toggleAdditionalContent()" class="btn btn-primary m-3">
+            {{ showAdditionalContent ? 'Read Less' : 'Read More' }}
+          </button>
+        </p>
+        <div *ngIf="showAdditionalContent">
+          <p>Samuel Sekibejja understands the challenges that these vulnerable children and families face. He has walked in their shoes as a youth himself and he knows the value of a Christian organization taking a child under its wings and developing him or her into a valued leader. Out of his experience, Mtoto W’afrika Child Care Ministries was born and will continue to foster the same love of Jesus and offer opportunities for vulnerable children and the communities. Mtoto W’afrika Child Care Ministries has a wonderful team of devoted staff that has a strong desire to share the love of Jesus Christ and help the youth to develop into strong and resilient leaders. We look forward to you visiting our website and we pray you will partner with us. As always, please pray for us and the children.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --red: #FF0000;
+  --yellow: #FFFF00;
+  --light-green: #90EE90;
+
+  --red-dark: #990606;
+  --light-green-dark: #77d477;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ededed;
+  color: var(--black);
+}
+
+.content-section {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 5rem 0; // Adjust padding as needed
+  margin-bottom: 0 !important; // Remove vertical spacing between background images
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; // No overlay
+  }
+
+  .container {
+    position: relative;
+    z-index: 1; // Ensure content is above overlay
+  }
+
+  .col-md-6 { // Target the text column
+    background-color: rgba(255, 255, 255, 0.9); // Slightly more opaque background for text
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.section-linker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px; /* Increased size */
+  height: 70px; /* Increased size */
+  background-color: var(--black);
+  border-radius: 50%;
+  position: relative; /* Enable positioning */
+  top: -35px; /* Pull it up by half its new height */
+  margin: 0 auto; /* Remove previous margins */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(5px);
+  }
+
+  .bi-arrow-down-circle {
+    color: var(--white);
+    font-size: 2.5rem; /* Increased icon size */
+  }
+}
+
+.new-title-class {
+  font-weight: bold;
+  color: var(--red); // Assuming red for titles based on previous requests
+}
+
+.new-paragraph-class {
+  color: var(--black); // Assuming black for body text based on previous requests
+}

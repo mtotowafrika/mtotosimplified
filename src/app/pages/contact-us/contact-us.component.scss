@@ -1,0 +1,12 @@
+.btn-primary {
+  background-color: var(--black);
+  border-color: var(--black);
+  padding: 1rem 2.5rem;
+  font-size: 1.25rem;
+  color: var(--white); // Ensure text is white
+
+  &:hover {
+    background-color: var(--black);
+    border-color: var(--black);
+  }
+}
