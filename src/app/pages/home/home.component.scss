@@ -10,10 +10,6 @@
     font-size: 4rem;
     font-weight: 700;
   }
-
-  p {
-    font-size: 1.5rem;
-  }
 }
 
 .btn-primary {
@@ -125,3 +121,40 @@
     }
   }
 }
+
+.video-section {
+  background-color: var(--light-green);
+  color: var(--black);
+  padding: 5rem 0;
+
+  .video-preview {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 4rem;
+      color: rgba(var(--red-rgb), 0.9);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    }
+  }
+}
+
+
+
+
+

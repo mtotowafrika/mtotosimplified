@@ -1,5 +1,17 @@
-[8/14/2025 7:53 AM] Samuel Chos: 25 mungusi women benefited, 15 malaika girls and 3 boys, in all 43 members benefited.
-[8/14/2025 7:53 AM] Samuel Chos: An average of 9000000=because each member saves 5000weekly in 52weeks a yr, and every member must generate an interest of 100000= , so 5000x52weeks=260000=x25ple=6500000= +2500000=( interest of 25ple)  plus the little malaika girls are making, average is 9,000,000= .
-[8/14/2025 7:53 AM] Samuel Chos: It could go more than that but we are affected by some  members with their weaknesses due to mixed composition of the group, we aim at lifting every one in the group just like mtoto wafrika is lifting us.
-[8/14/2025 7:53 AM] Samuel Chos: Mtoto wafrika supported us by facilitating a training in farming in God's way, we were blessed with some tools to be used when planting, we who were trained also trained the rest of the members, mtoto wafrika also cleared for us the thorny areas of the property where we plant the seeds, provided us with the seeds to be planted in the group garden but we opt to do it more individually because the property is too open and animals trespass and destroy our crops.
-[8/14/2025 7:53 AM] Samuel Chos: Mtoto wafrika stood so firm in supporting us spiritually, financially, materially, skillfully, that made it possible for us to initiate table cloth making, toasting fresh fish for muchomo, making mandazi, sewing clothes by malaika , making re usable sanitary pads and sweater weaving,  God is soooogood  for giving us a loving boss( Samuel and his team) in kampala who really works hard, hand in hand with the team on the ground, thank you for your transparency, accountability and continuous support, we pray that God bless our organisation so that we do greater things, I know we can.
+
+
+Component update sent to client(s).
+Component update failed: NG0904: unsafe value used in a resource URL context (see https://angular.dev/best-practices/security#preventing-cross-site-scripting-xss)
+Error: NG0904: unsafe value used in a resource URL context (see https://angular.dev/best-practices/security#preventing-cross-site-scripting-xss)
+    at ɵɵsanitizeResourceUrl (http://localhost:4200/@fs/C:/Users/dell/Documents/ALF%20CLIENTS/MTOTO%20WAFRIKA/2025/mtoto2025/.angular/cache/19.2.15/mtoto2025/vite/deps/chunk-LBCYZSVY.js?v=3a2a8bbf:8201:9)
+    at elementPropertyInternal (http://localhost:4200/@fs/C:/Users/dell/Documents/ALF%20CLIENTS/MTOTO%20WAFRIKA/2025/mtoto2025/.angular/cache/19.2.15/mtoto2025/vite/deps/chunk-LBCYZSVY.js?v=3a2a8bbf:9095:33)
+    at Module.ɵɵproperty (http://localhost:4200/@fs/C:/Users/dell/Documents/ALF%20CLIENTS/MTOTO%20WAFRIKA/2025/mtoto2025/.angular/cache/19.2.15/mtoto2025/vite/deps/chunk-LBCYZSVY.js?v=3a2a8bbf:17940:5)
+    at HomeComponent_Template (http://localhost:4200/@ng/component?c=src%2Fapp%2Fpages%2Fhome%2Fhome.component.ts%40HomeComponent&t=1755880722014:107:23)
+    at recreate (http://localhost:4200/@fs/C:/Users/dell/Documents/ALF%20CLIENTS/MTOTO%20WAFRIKA/2025/mtoto2025/.angular/cache/19.2.15/mtoto2025/vite/deps/chunk-LBCYZSVY.js?v=3a2a8bbf:21321:5)
+    at executeWithInvalidateFallback (http://localhost:4200/@fs/C:/Users/dell/Documents/ALF%20CLIENTS/MTOTO%20WAFRIKA/2025/mtoto2025/.angular/cache/19.2.15/mtoto2025/vite/deps/chunk-LBCYZSVY.js?v=3a2a8bbf:21331:5)
+    at http://localhost:4200/@fs/C:/Users/dell/Documents/ALF%20CLIENTS/MTOTO%20WAFRIKA/2025/mtoto2025/.angular/cache/19.2.15/mtoto2025/vite/deps/chunk-LBCYZSVY.js?v=3a2a8bbf:21326:20
+    at _ZoneDelegate.invoke (http://localhost:4200/polyfills.js:329:158)
+Please consider reporting the error at https://github.com/angular/angular-cli/issues
+Page reload sent to client(s).
+
+
