@@ -41,7 +41,7 @@ export class ChildDetailsComponent implements OnInit {
   public showSponsorForm(childName: string): void {
     Swal.fire({
       html: `
-            <h2 class="fw-bold h1">Sponsor ${childName}</h2>
+            <h2 class="fw-bold childsname"><span>Sponsor</span> ${childName}</h2>
             <p>Please fill out the form below to sponsor this child.</p>
             
             <form id="sponsor-form">

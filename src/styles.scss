@@ -12,6 +12,16 @@
   --light-green-dark: #60c560;
   --red-rgb: 255, 0, 0; /* Added for rgba colors */
 }
+.childsname{
+  font-size: 20px !important;
+  padding: 20px;
+  color: #ffffff;
+
+  background-color: var(--light-green-dark);
+}
+.childsname span{
+  color: #000000 !important;
+}
 .bg-success {
   background-color: var(--light-green-dark) !important;
 }
