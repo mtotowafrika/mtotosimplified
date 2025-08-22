@@ -66,7 +66,7 @@ export class ChildDetailsComponent implements OnInit {
                 <label for="message">Message (optional)</label>
               </div>
               <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-lg" style="background-color: var(--red); border-color: var(--red);">Submit Sponsorship Inquiry</button>
+                <button type="submit" class="btn btn-danger btn-lg">Submit </button>
               </div>
             </form>
           `,

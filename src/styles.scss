@@ -93,3 +93,21 @@ body {
 .new-paragraph-class {
   color: var(--black); // Assuming black for body text based on previous requests
 }
+#sponsor-form input{
+  font-weight: 600 !important;
+  color: var(--red-dark);
+  border: 0 !important;
+  border-bottom: 2px solid var(--light-green-dark) !important;
+  border-radius: 0 !important;
+}
+
+.btn-light-green-dark {
+  background-color: var(--light-green-dark);
+  border-color: var(--light-green-dark);
+  color: var(--white); // Assuming white text for contrast
+
+  &:hover {
+    filter: brightness(0.9); // Pure CSS darken effect
+    /* Optionally, you can also adjust border color if needed */
+  }
+}
