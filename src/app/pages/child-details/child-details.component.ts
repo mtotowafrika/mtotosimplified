@@ -45,25 +45,25 @@ export class ChildDetailsComponent implements OnInit {
             <p>Please fill out the form below to sponsor this child.</p>
             
             <form id="sponsor-form">
-              <div class="form-group mb-3">
+              <div class="form-floating mb-3">
+                <input type="text" id="name" name="name" class="form-control custom-form-control" placeholder="Your Name" required>
                 <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" class="form-control" required>
               </div>
-              <div class="form-group mb-3">
+              <div class="form-floating mb-3">
+                <input type="tel" id="phone" name="phone" class="form-control custom-form-control" placeholder="Your Phone" required>
                 <label for="phone">Your Phone</label>
-                <input type="tel" id="phone" name="phone" class="form-control" required>
               </div>
-              <div class="form-group mb-3">
+              <div class="form-floating mb-3">
+                <input type="email" id="email" name="email" class="form-control custom-form-control" placeholder="Your Email" required>
                 <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" class="form-control" required>
               </div>
-              <div class="form-group mb-3">
+              <div class="form-floating mb-3">
+                <input type="text" id="childName" name="childName" value="${childName}" class="form-control custom-form-control" placeholder="Sponsoring" readonly>
                 <label for="childName">Sponsoring</label>
-                <input type="text" id="childName" name="childName" value="${childName}" class="form-control" readonly>
               </div>
-              <div class="form-group mb-3">
+              <div class="form-floating mb-3">
+                <textarea id="message" name="message" class="form-control custom-form-control" placeholder="Message (optional)" rows="5"></textarea>
                 <label for="message">Message (optional)</label>
-                <textarea id="message" name="message" class="form-control" rows="5"></textarea>
               </div>
               <div class="text-center">
                 <button type="submit" class="btn btn-primary btn-lg" style="background-color: var(--red); border-color: var(--red);">Submit Sponsorship Inquiry</button>

@@ -38,5 +38,7 @@ testem.log
 /typings
 
 # System files
+# Ignore large video file
+src/assets/videos/kids.mp4
 .DS_Store
 Thumbs.db
