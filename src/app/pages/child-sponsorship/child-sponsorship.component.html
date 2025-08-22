@@ -2,7 +2,7 @@
   <h2 class="text-center mb-4">Sponsor a Child</h2>
   <div class="row" *ngIf="children$ | async as children">
     <div class="col-md-4 mb-4" *ngFor="let child of children">
-      <div class="card child-card">
+      <a routerLink="/child-details/{{child.id}}" class="card child-card text-decoration-none text-dark">
         <img [src]="child.picturePath" class="card-img-top" [alt]="child.name">
         <div class="card-body">
           <h5 class="card-title">{{ child.name }}</h5>
@@ -10,9 +10,9 @@
             <strong>Year of Birth:</strong> {{ child.yearOfBirth }}<br>
             <strong>Grade:</strong> {{ child.grade }}
           </p>
-          <a routerLink="/child-details/{{child.id}}" class="btn btn-primary rounded-pill">Sponsor Me</a>
+          <span class="btn btn-primary rounded-pill">Sponsor Me</span>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </div>
