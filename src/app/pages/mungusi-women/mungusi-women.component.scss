@@ -1,16 +1,104 @@
-h2 {
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: var(--white); // Set title color to white for contrast on background image
+/* General Section Styling */
+section {
+  padding: 5rem 0;
+  overflow: hidden;
 }
 
-p {
-    margin-bottom: 1.5rem;
-    color: var(--white); // Set body text color to white for contrast on background image
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--red-dark); /* Consistent title color */
 }
 
-// Remove previous overrides to allow background image to show through
-:host ::ng-deep .content-section .col-md-6 {
-  background-color: transparent !important; // Allow background image to show
-  color: inherit !important; // Inherit color from parent (which will be white)
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.lead-lg {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+/* Benefits List */
+.benefits-list {
+  padding-left: 0;
+  li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    i {
+      color: var(--light-green); /* Consistent icon color */
+      margin-right: 0.75rem;
+      font-size: 1.8rem; /* Larger icons for impact */
+    }
+  }
+}
+
+/* Image Styling */
+.img-fluid {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.75rem; /* Slightly more rounded corners */
+  object-fit: cover;
+}
+
+.large-image {
+  width: 100%;
+  height: 400px; /* Larger fixed height for prominent images */
+}
+
+.gallery-image {
+  width: 100%;
+  height: 300px; /* Fixed height for gallery images */
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+.rounded-lg {
+  border-radius: 1rem !important;
+}
+
+/* Section Specific Styles */
+.mungusi-women-section,
+.malaika-girls-section {
+  background-color: #fff;
+}
+
+.farming-initiatives-section,
+.impact-gallery-section,
+.testimonial-section {
+  background-color: #f8f9fa;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: var(--red);
+  border-color: var(--red);
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 2rem; /* Pill shape */
+  &:hover {
+    background-color: var(--red-dark);
+    border-color: var(--red-dark);
+  }
+}
+
+/* Testimonial Specific */
+.testimonial-section {
+  .blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--black);
+    line-height: 1.6;
+  }
+  .blockquote-footer {
+    font-size: 1rem;
+    color: var(--black);
+    margin-top: 1.5rem;
+  }
 }

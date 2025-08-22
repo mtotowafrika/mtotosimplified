@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { ChildSponsorshipService } from '../../services/child-sponsorship.service';
 import { Child } from '../../models/child.model';
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import Swal from 'sweetalert2';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
@@ -19,8 +19,13 @@ export class ChildDetailsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private childSponsorshipService: ChildSponsorshipService
+    private childSponsorshipService: ChildSponsorshipService,
+    private location: Location
   ) { }
+
+  goBack(): void {
+    this.location.back();
+  }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
@@ -33,29 +38,36 @@ export class ChildDetailsComponent implements OnInit {
     });
   }
 
-  public contact(childName: string): void {
+  public showSponsorForm(childName: string): void {
     Swal.fire({
       html: `
             <h2 class="fw-bold h1">Sponsor ${childName}</h2>
             <p>Please fill out the form below to sponsor this child.</p>
             
             <form id="sponsor-form">
-              <div class="form-group">
-                <input type="text" id="name" name="name" placeholder="Your Name" class="form-control mb-2" required>
+              <div class="form-group mb-3">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" class="form-control" required>
               </div>
-              <div class="form-group">
-                <input type="tel" id="phone" name="phone" class="form-control mb-2" placeholder="Your Phone" required>
+              <div class="form-group mb-3">
+                <label for="phone">Your Phone</label>
+                <input type="tel" id="phone" name="phone" class="form-control" required>
               </div>
-              <div class="form-group">
-                <input type="email" id="email" name="email" class="form-control mb-2" placeholder="Your Email" required>
+              <div class="form-group mb-3">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" class="form-control" required>
               </div>
-              <div class="form-group">
-                <input type="text" id="childName" name="childName" value="${childName}" class="form-control mb-2" readonly>
+              <div class="form-group mb-3">
+                <label for="childName">Sponsoring</label>
+                <input type="text" id="childName" name="childName" value="${childName}" class="form-control" readonly>
               </div>
-              <div class="form-group">
-                <textarea id="message" name="message" placeholder="Your Message (optional)" class="form-control mb-2" rows="4"></textarea>
+              <div class="form-group mb-3">
+                <label for="message">Message (optional)</label>
+                <textarea id="message" name="message" class="form-control" rows="5"></textarea>
               </div>
-              <button type="submit" class="btn btn-dark mt-3">Submit Sponsorship Inquiry</button>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg" style="background-color: var(--red); border-color: var(--red);">Submit Sponsorship Inquiry</button>
+              </div>
             </form>
           `,
       showCloseButton: true,
@@ -66,14 +78,14 @@ export class ChildDetailsComponent implements OnInit {
         if (form) {
           form.addEventListener("submit", (e: Event) => {
             e.preventDefault();
-            this.sendSponsorshipInquiry(form as HTMLFormElement);
+            this._sendSponsorshipInquiry(form as HTMLFormElement);
           });
         }
       },
     });
   }
 
-  private sendSponsorshipInquiry(form: HTMLFormElement): void {
+  private _sendSponsorshipInquiry(form: HTMLFormElement): void {
     Swal.fire({
       title: "Sending...",
       text: "Please wait while we send your sponsorship inquiry.",

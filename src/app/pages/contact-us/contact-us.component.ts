@@ -11,47 +11,10 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 })
 export class ContactUsComponent {
 
-  public contact(): void {
-    Swal.fire({
-      html: `
-            <h2 class="fw-bold h1">Get in touch</h2>
-            <p>We shall be glad to hear from you</p>
-            
-            <form id="contact-form">
-              <div class="form-group">
-                <input type="text" id="name" name="name" placeholder="Name" class="form-control mb-2" required>
-              </div>
-              <div class="form-group">
-                <input type="tel" id="phone" name="phone" class="form-control mb-2" placeholder="Phone" required>
-              </div>
-              <div class="form-group">
-                <input type="email" id="email" name="email" class="form-control mb-2" placeholder="Email" required>
-              </div>
-              <div class="form-group">
-                <input type="text" id="subject" name="subject" class="form-control mb-2" placeholder="Subject" required>
-              </div>
-              <div class="form-group">
-                <textarea id="message" name="message" placeholder="Message" class="form-control mb-2" rows="4" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-dark mt-3">Submit</button>
-            </form>
-          `,
-      showCloseButton: true,
-      showCancelButton: false,
-      showConfirmButton: false,
-      didOpen: () => {
-        const form = document.getElementById("contact-form");
-        if (form) {
-          form.addEventListener("submit", (e: Event) => {
-            e.preventDefault();
-            this.sendmessage(form as HTMLFormElement);
-          });
-        }
-      },
-    });
-  }
+  public sendmessage(event: Event): void {
+    event.preventDefault();
+    const form = event.target as HTMLFormElement;
 
-  private sendmessage(form: HTMLFormElement): void {
     Swal.fire({
       title: "Sending...",
       text: "Please wait while we send your message.",

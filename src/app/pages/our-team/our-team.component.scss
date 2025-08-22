@@ -1,51 +1,27 @@
-.team-card {
-  border: none;
-  text-align: center;
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--yellow) !important; /* Set card background to theme yellow */
+    color: var(--black); /* Set text color inside card to black for contrast */
 
-  .card-img-top {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin: 0 auto 1.5rem;
-  }
-
-  .card-title {
-    font-weight: 700;
-  }
-
-  .card-text {
-    color: #6c757d;
-  }
-
-  .social-links {
-    margin-top: 1rem;
-
-    a {
-      color: var(--black);
-      font-size: 1.5rem;
-      margin: 0 0.5rem;
-      transition: color 0.3s ease;
-
-      &:hover {
-        color: var(--black);
-      }
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
-  }
 }
 
-// New styles for .content-section .col-md-6 specifically for this component
-h2 {
+.card-title {
     font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--red); // Set title color to red
+    margin-bottom: 0.5rem;
 }
 
-p {
-    margin-bottom: 1.5rem;
-}
+.btn-primary {
+  background-color: var(--red);
+  border-color: var(--red);
+  padding: 0.75rem 2rem;
 
-:host ::ng-deep .content-section .col-md-6 {
-  background-color: var(--white) !important; // Card background white
-  color: var(--black) !important; // Body text black
+  &:hover {
+    background-color: var(--red-dark);
+    border-color: var(--red-dark);
+  }
 }

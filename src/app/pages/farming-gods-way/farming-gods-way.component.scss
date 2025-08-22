@@ -1,16 +1,145 @@
-h2 {
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: var(--white); // Set title color to white for contrast on background image
+/* General Section Styling */
+section {
+  padding: 5rem 0;
+  overflow: hidden;
 }
 
-p {
-    margin-bottom: 1.5rem;
-    color: var(--white); // Set body text color to white for contrast on background image
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--red-dark); /* Consistent title color */
 }
 
-// Remove previous overrides to allow background image to show through
-:host ::ng-deep .content-section .col-md-6 {
-  background-color: transparent !important; // Allow background image to show
-  color: inherit !important; // Inherit color from parent (which will be white)
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.75rem; /* Slightly more rounded corners */
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  i {
+    margin-right: 0.75rem;
+    font-size: 1.8rem;
+  }
+}
+
+/* Benefits List */
+.benefits-list {
+  padding-left: 0;
+  li {
+    margin-bottom: 0.25rem; /* Reduced vertical spacing further */
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    i {
+      color: var(--light-green); /* Consistent icon color */
+      margin-right: 0.75rem;
+      font-size: 1.8rem; /* Larger icons for impact */
+    }
+  }
+}
+
+/* Image Styling */
+.img-fluid {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.75rem; /* Slightly more rounded corners */
+  object-fit: cover;
+}
+
+.large-image {
+  width: 100%;
+  height: 400px; /* Larger fixed height for prominent images */
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+.rounded-lg {
+  border-radius: 1rem !important;
+}
+
+/* Section Specific Styles */
+.farming-initiatives-section {
+  background-color: #fff; /* Changed to white for consistency with other sections */
+}
+
+/* Call to Action Button */
+.btn-primary {
+  background-color: var(--red);
+  border-color: var(--red);
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 2rem; /* Pill shape */
+  &:hover {
+    background-color: var(--red-dark);
+    border-color: var(--red-dark);
+  }
+}
+
+.btn-light {
+  background-color: var(--white);
+  border-color: var(--white);
+  color: var(--red-dark);
+  &:hover {
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+  }
+}
+
+/* New Section Backgrounds */
+.bg-white {
+  background-color: var(--white) !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.bg-primary-dark {
+  background-color: var(--red-dark) !important;
+}
+
+.text-white {
+  color: var(--white) !important;
+}
+
+/* Icon Colors for Benefits Section */
+.text-success {
+  color: var(--light-green) !important;
+}
+
+.text-primary {
+  color: var(--red) !important;
+}
+
+.text-info {
+  color: var(--light-green-dark) !important;
+}
+
+.text-warning {
+  color: var(--yellow) !important;
+}
+
+.text-danger {
+  color: var(--red-dark) !important;
+}
+
+.text-secondary {
+  color: var(--black) !important;
 }

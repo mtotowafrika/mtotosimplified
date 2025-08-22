@@ -1,64 +1,15 @@
-.timeline {
-  position: relative;
-  padding: 2rem 0;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 18px;
-    height: 100%;
-    width: 4px;
-    background: #f8f9fa;
-  }
-}
-
-.timeline-item {
-  margin-bottom: 2rem;
-  position: relative;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.timeline-img {
-  position: absolute;
-  top: 5px;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--black);
-  border: 3px solid #fff;
-}
-
-.timeline-content {
-  margin-left: 60px;
-  background: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-
-  h2 {
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-}
-
-// New styles for .content-section .col-md-6 specifically for this component
 h2 {
     font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--white); // Set title color to white for contrast on background image
+    margin-bottom: 1.5rem;
 }
 
 p {
     margin-bottom: 1.5rem;
-    color: var(--white); // Set body text color to white for contrast on background image
 }
 
-// Remove previous overrides to allow background image to show through
-:host ::ng-deep .content-section .col-md-6 {
-  background-color: transparent !important; // Allow background image to show
-  color: inherit !important; // Inherit color from parent (which will be white)
+.new-title-class {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--black);
+    padding: 1rem;
+    border-radius: 0.5rem;
 }

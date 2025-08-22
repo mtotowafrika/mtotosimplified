@@ -1,34 +1,35 @@
 <div class="container my-5" *ngIf="child">
-  <div class="row">
-    <div class="col-md-8 offset-md-2 text-center">
-      <h1 class="mb-4">{{ child.name }}'s Profile</h1>
-    </div>
-  </div>
-
-  <div class="row align-items-center">
-    <div class="col-md-6 text-center">
-      <img [src]="child.picturePath" class="img-fluid rounded-circle mb-4" [alt]="child.name">
-    </div>
-    <div class="col-md-6">
-      <div class="card child-details-card">
-        <div class="card-body">
-          <h5 class="card-title">Child Details</h5>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><strong>Child's ID:</strong> {{ child.id }}</li>
-            <li class="list-group-item"><strong>Year of Birth:</strong> {{ child.yearOfBirth }}</li>
-            <li class="list-group-item"><strong>Grade:</strong> {{ child.grade }}</li>
-            <li class="list-group-item"><strong>Lives with:</strong> {{ child.livesWith }}</li>
-            <li class="list-group-item"><strong>No. of siblings:</strong> {{ child.numberOfSiblings }}</li>
-            <li class="list-group-item"><strong>School:</strong> {{ child.school }}</li>
-          </ul>
-          <button (click)="contact(child.name)" class="btn btn-primary rounded-pill mt-4">Sponsor {{ child.name }}</button>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="d-flex justify-content-start mb-3">
+                <button (click)="goBack()" class="btn btn-dark rounded-pill"><i class="bi bi-arrow-left"></i> Back</button>
+            </div>
+            <div class="card no-shadow">
+                <img [src]="child.picturePath" class="card-img-top child-image" [alt]="child.name">
+                <div class="card-body">
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="col-md-6">
+            <div class="card h-100 d-flex flex-column justify-content-center p-4">
+                <h2 class="card-title text-center mb-4">{{ child.name }}'s Details</h2>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item"><strong>Child's ID:</strong> {{ child.id }}</li>
+                    <li class="list-group-item"><strong>Year of Birth:</strong> {{ child.yearOfBirth }}</li>
+                    <li class="list-group-item"><strong>Grade:</strong> {{ child.grade }}</li>
+                    <li class="list-group-item"><strong>Lives with:</strong> {{ child.livesWith }}</li>
+                    <li class="list-group-item"><strong>No. of siblings:</strong> {{ child.numberOfSiblings }}</li>
+                    <li class="list-group-item"><strong>School:</strong> {{ child.school }}</li>
+                </ul>
+                <div class="text-center">
+                    <button (click)="showSponsorForm(child.name)" class="btn btn-primary btn-lg">Sponsor {{ child.name }}</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="container my-5 text-center" *ngIf="!child">
-  <p class="lead">Child not found.</p>
-  <a routerLink="/programs/child-sponsorship" class="btn btn-secondary rounded-pill">Back to Child Sponsorship</a>
+    <p class="lead">Child not found.</p>
+    <a routerLink="/programs/child-sponsorship" class="btn btn-secondary rounded-pill">Back to Child Sponsorship</a>
 </div>

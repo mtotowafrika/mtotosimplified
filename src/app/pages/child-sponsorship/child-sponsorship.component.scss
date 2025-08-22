@@ -10,7 +10,7 @@
   }
 
   .card-img-top {
-    height: 200px;
+    height: 300px;
     object-fit: cover;
   }
 
@@ -29,5 +29,13 @@
         border-color: var(--black);
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .child-card .card-img-top {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
   }
 }

@@ -1,34 +1,38 @@
-.img-fluid {
-  max-width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border: 5px solid var(--black);
+.card {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.child-details-card {
-  border: none;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  border-radius: 0.5rem;
+.card.no-shadow {
+    box-shadow: none !important;
+}
 
-  .card-title {
-    font-weight: 700;
-    color: var(--black);
-    margin-bottom: 1.5rem;
+.btn-primary {
+  background-color: var(--red);
+  border-color: var(--red);
+  padding: 0.75rem 2rem;
+
+  &:hover {
+    background-color: var(--red-dark);
+    border-color: var(--red-dark);
   }
+}
 
-  .list-group-item {
-    border: none;
-    padding-left: 0;
+.form-control {
+  border-color: var(--black); /* Use black for input borders */
+  &:focus {
+    border-color: var(--red); /* Highlight with theme red on focus */
+    box-shadow: 0 0 0 0.25rem rgba(var(--red-rgb), 0.25); /* Subtle red shadow on focus */
   }
+}
 
-  .btn-primary {
-    background-color: var(--black);
-    border-color: var(--black);
-    color: var(--white); // Ensure text is white
-
-    &:hover {
-      background-color: var(--black); // Keep black on hover
-      border-color: var(--black); // Keep black on hover
-    }
-  }
+.child-image {
+  max-width: 350px; /* Slightly larger */
+  max-height: 350px; /* Slightly larger */
+  width: 100%; /* Ensure responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  display: block; /* To center it if needed */
+  margin: 0 auto; /* To center it */
+  border-radius: 0.5rem; /* Optional: add some border-radius */
 }

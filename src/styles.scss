@@ -9,9 +9,12 @@
   --light-green: #90EE90;
 
   --red-dark: #990606;
-  --light-green-dark: #77d477;
+  --light-green-dark: #60c560;
+  --red-rgb: 255, 0, 0; /* Added for rgba colors */
 }
-
+.bg-success {
+  background-color: var(--light-green-dark) !important;
+}
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #ededed;
