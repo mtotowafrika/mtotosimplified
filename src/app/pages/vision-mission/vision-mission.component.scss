@@ -1,9 +1,26 @@
 .card {
     margin-bottom: 1.5rem;
-    background-color: #f8f9fa;
+    background-color: var(--light-green-dark);
+    border: none;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .card-title {
     font-weight: 700;
     margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.card-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--white);
 }

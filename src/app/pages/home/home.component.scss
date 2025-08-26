@@ -154,6 +154,19 @@
   }
 }
 
+.partners-section {
+  background-color: #f8f9fa;
+
+  .partner-logo {
+    max-height: 80px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
 
 
 

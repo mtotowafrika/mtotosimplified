@@ -1,27 +1,35 @@
 .card {
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: var(--yellow) !important; /* Set card background to theme yellow */
-    color: var(--black); /* Set text color inside card to black for contrast */
+    background-color: var(--white) !important;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid var(--yellow);
 
     &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     }
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: center;
 }
 
 .card-title {
     font-weight: 700;
     margin-bottom: 0.5rem;
+    color: var(--black);
 }
 
-.btn-primary {
-  background-color: var(--red);
-  border-color: var(--red);
-  padding: 0.75rem 2rem;
-
-  &:hover {
-    background-color: var(--red-dark);
-    border-color: var(--red-dark);
-  }
+.card-text {
+    color: #666;
+    font-style: italic;
 }
