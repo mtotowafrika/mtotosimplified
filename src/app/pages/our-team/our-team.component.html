@@ -28,6 +28,8 @@
         <div class="col-md-12 text-center">
             <h2 class="mb-4">Volunteers</h2>
         </div>
+    </div>
+    <div class="row mt-5 justify-content-center">
         <div class="col-md-3 mb-4" *ngFor="let member of teamMembers.slice(4)">
             <div class="card h-100 text-center">
                 <img [src]="member.image" class="card-img-top team-photo mx-auto mt-3" [alt]="member.name">

@@ -1,1 +1,6 @@
-nice. but remove the photos please, on this page, only leave the header banner photo. also fix the  footer, it is placed badly. i see some of the history content overlapping it
+OUR CORRECT MISSION AND VISION ARE THESE. PLEASE FIX THEM WHEREVER THEY ARE STATED IN MY ENTIRE  APPLICATION.
+
+OUR MISSION
+Restoring hope, Inspiring talents, & Grooming exceptional, intentional & generational African children while offering support through bringing resources closer to community reach.
+OUR VISION
+A brighter future for every African child, raised to be resilient, resourceful and a Godly community leader.
