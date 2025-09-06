@@ -1,0 +1,11 @@
+# Angular HTML5 mode rewrite for Namecheap/Apache
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  # If the requested file or directory exists, serve it
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  # Otherwise, redirect all requests to index.html
+  RewriteRule ^ index.html [L]
+</IfModule>
