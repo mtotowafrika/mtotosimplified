@@ -1,1 +1,1 @@
-Kindly redesign our-history page like a senior UI/UX Designer/developer who has worked as a top designer at Adobe for the past 30 years. Make the page look so cool and porsh and elegant. keep in mind our branding colors
+nice. but remove the photos please, on this page, only leave the header banner photo. also fix the  footer, it is placed badly. i see some of the history content overlapping it

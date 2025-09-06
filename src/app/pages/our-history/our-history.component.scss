@@ -1,15 +1,129 @@
-h2 {
-    font-weight: 700;
-    margin-bottom: 1.5rem;
+:host {
+  --red-dark: #990606;
+  --light-green-dark: #60c560;
+  --white: #FFFFFF;
+  --black: #000000;
 }
 
-p {
-    margin-bottom: 1.5rem;
+.history-container {
+  width: 100%;
+  background: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+  padding: 50px 0;
 }
 
-.new-title-class {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: var(--black);
-    padding: 1rem;
-    border-radius: 0.5rem;
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  ul li {
+    margin-bottom: 50px;
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+    &:nth-child(odd) {
+      float: left;
+      clear: right;
+      transform: translateX(-30px);
+    }
+
+    &:nth-child(even) {
+      float: right;
+      clear: left;
+      transform: translateX(30px);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      background-color: var(--light-green-dark);
+      border-radius: 50%;
+      border: 3px solid var(--white);
+    }
+
+    &:nth-child(odd)::before {
+      right: -30px;
+    }
+
+    &:nth-child(even)::before {
+      left: -30px;
+    }
+  }
+
+  ul li.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background-color: var(--red-dark);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.history-page-content .timeline-text {
+  time {
+    color: var(--red-dark) !important;
+  }
+
+  h3 {
+    color: var(--black) !important;
+  }
+
+  p {
+    color: #333 !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .timeline ul li {
+    width: 100%;
+    float: none;
+    clear: both;
+    margin-bottom: 30px;
+
+    &:nth-child(odd), &:nth-child(even) {
+      transform: translateX(0);
+    }
+  }
+
+  .timeline::before {
+    left: -30px;
+  }
+
+  .timeline ul li::before {
+    left: -40px;
+  }
 }
