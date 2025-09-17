@@ -9,7 +9,11 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
   templateUrl: './contact-us.component.html',
   styleUrls: ['./contact-us.component.scss']
 })
+
 export class ContactUsComponent {
+  constructor() {
+    emailjs.init('HEtdKOx_AHbBIZQ1g');
+  }
 
   public sendmessage(event: Event): void {
     event.preventDefault();

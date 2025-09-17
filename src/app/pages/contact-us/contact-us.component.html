@@ -1,36 +1,106 @@
-<div class="container my-5">
-    <div class="row">
-        <div class="col-md-8 mx-auto">
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title text-center">Contact Us</h2>
-                    <form id="contact-form" (submit)="sendmessage($event)">
-                        <div class="form-group mb-3">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" class="form-control" required>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" class="form-control" required>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-lg px-3 py-2">Send Message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+<div class="contact-hero">
+  <div class="contact-hero-content">
+    <h1 class="display-4 fw-bold mb-2">Contact Us</h1>
+    <p class="lead mb-0">
+      We'd love to hear from you! Whether you have a question, want to partner,
+      or just want to say hello, our team is ready to connect.
+    </p>
+  </div>
+</div>
+<div class="contact-content">
+  <div class="contact-card">
+    <form id="contact-form" (submit)="sendmessage($event)">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="Your Name"
+              required
+            />
+            <label for="name">Your Name</label>
+          </div>
         </div>
+        <div class="col-md-6">
+          <div class="form-floating mb-3">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="form-control"
+              placeholder="Your Phone"
+              required
+            />
+            <label for="phone">Your Phone</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="Your Email"
+              required
+            />
+            <label for="email">Your Email</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              class="form-control"
+              placeholder="Subject"
+              required
+            />
+            <label for="subject">Subject</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-floating mb-3">
+            <textarea
+              id="message"
+              name="message"
+              class="form-control"
+              placeholder="Message"
+              style="height: 120px"
+              required
+            ></textarea>
+            <label for="message">Message</label>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-primary btn-lg px-5 py-2 shadow">
+          Send Message
+        </button>
+      </div>
+    </form>
+    <div class="contact-info mt-5">
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4 text-center">
+          <div class="info-icon mb-2"><i class="bi bi-geo-alt-fill"></i></div>
+          <h5 class="fw-bold">Address</h5>
+          <p class="mb-0">Luwero, Uganda</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="info-icon mb-2"><i class="bi bi-envelope-fill"></i></div>
+          <h5 class="fw-bold">Email</h5>
+          <p class="mb-0">info&#64;mtotowafrikauganda.org</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="info-icon mb-2"><i class="bi bi-telephone-fill"></i></div>
+          <h5 class="fw-bold">Phone</h5>
+          <p class="mb-0">+256 781 548123</p>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

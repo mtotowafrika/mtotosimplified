@@ -1,23 +1,82 @@
-.card {
-    border: none;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+.contact-hero {
+  background: linear-gradient(rgba(183,28,28,0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/bg1.jpg') center/cover no-repeat;
+  color: #fff;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1.5rem;
+  margin-bottom: -60px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.17);
+  position: relative;
+  z-index: 1;
+}
+
+.contact-hero-content {
+  padding: 3rem 1rem 2rem 1rem;
+}
+
+.contact-content {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+  position: relative;
+  z-index: 2;
+  padding: 3rem 2rem 2rem 2rem;
+  margin-top: -60px;
+}
+
+.contact-card {
+  padding: 2rem 1rem;
+}
+
+.form-floating > .form-control, .form-floating > .form-control:focus {
+  border-radius: 0.75rem;
+  border: 1.5px solid var(--red, #000000);
+  background: #f9f9f9;
+  box-shadow: none;
+}
+
+.form-floating > label {
+  color: var(--red, #000000);
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .btn-primary {
-  background-color: var(--red);
-  border-color: var(--red);
-  padding: 0.75rem 2rem;
-
-  &:hover {
-    background-color: var(--red-dark);
-    border-color: var(--red-dark);
-  }
+  background-color: var(--red, #b71c1c);
+  border-color: var(--red, #b71c1c);
+  padding: 0.75rem 2.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  transition: background 0.2s, border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(183,28,28,0.08);
+}
+.btn-primary:hover {
+  background-color: var(--red-dark, #990606);
+  border-color: var(--red-dark, #990606);
+  box-shadow: 0 4px 16px rgba(183,28,28,0.12);
 }
 
-.form-control {
-  border-color: var(--black); /* Use black for input borders */
-  &:focus {
-    border-color: var(--red); /* Highlight with theme red on focus */
-    box-shadow: 0 0 0 0.25rem rgba(var(--red-rgb), 0.25); /* Subtle red shadow on focus */
+.contact-info {
+  margin-top: 2.5rem;
+}
+.info-icon {
+  font-size: 2.5rem;
+  color: var(--red, #b71c1c);
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .contact-content {
+    padding: 1.2rem 0.5rem;
+  }
+  .contact-hero-content {
+    padding: 2rem 0.5rem 1rem 0.5rem;
   }
 }
