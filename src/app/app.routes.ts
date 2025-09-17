@@ -3,6 +3,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { VisionMissionComponent } from './pages/vision-mission/vision-mission.component';
 import { OurHistoryComponent } from './pages/our-history/our-history.component';
 import { OurTeamComponent } from './pages/our-team/our-team.component';
+import { FounderComponent } from './pages/founder/founder.component';
 import { ChildSponsorshipComponent } from './pages/child-sponsorship/child-sponsorship.component';
 import { NurserySchoolComponent } from './pages/nursery-school/nursery-school.component';
 import { MungusiWomenComponent } from './pages/mungusi-women/mungusi-women.component';
@@ -20,6 +21,7 @@ export const routes: Routes = [
     { path: 'about/vision-mission', component: VisionMissionComponent },
     { path: 'about/history', component: OurHistoryComponent },
     { path: 'about/team', component: OurTeamComponent },
+    { path: 'about/founder', component: FounderComponent },
     { path: 'programs/child-sponsorship', component: ChildSponsorshipComponent },
     { path: 'programs/nursery-school', component: NurserySchoolComponent },
     { path: 'programs/mungusi-women', component: MungusiWomenComponent },

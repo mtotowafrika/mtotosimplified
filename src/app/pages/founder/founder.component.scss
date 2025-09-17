@@ -1,0 +1,66 @@
+
+
+.founder-hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/assets/images/team/samuel.jpg') center/cover no-repeat;
+  color: #fff;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.founder-content {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  margin-top: -80px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.founder-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--red, #b71c1c);
+  margin-top: -90px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  background: #fff;
+}
+
+.founder-quote {
+  font-style: italic;
+  color: var(--primary, #388e3c);
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--red, #b71c1c);
+  padding-left: 1rem;
+}
+
+.founder-section-title {
+  color: var(--red, #b71c1c);
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  .founder-content {
+    padding: 1.2rem 0.5rem;
+  }
+  .founder-photo {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+  }
+}
