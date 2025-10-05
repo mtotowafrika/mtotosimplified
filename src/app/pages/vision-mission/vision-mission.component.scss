@@ -1,5 +1,6 @@
 .card {
     margin-bottom: 1.5rem;
+    margin-top: 50px !important;
     background-color: var(--light-green-dark);
     border: none;
     border-radius: 15px;
@@ -19,8 +20,9 @@
     color: var(--black);
 }
 
+
 .card-text {
     font-size: 1.1rem;
-    line-height: 1.6;
+        /* margin-top moved to :host ::ng-deep for higher specificity */
     color: var(--white);
 }

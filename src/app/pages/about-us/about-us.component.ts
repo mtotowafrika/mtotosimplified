@@ -26,7 +26,7 @@ export class AboutUsComponent {
   missionVision = {
     mission: {
       title: 'Our Mission',
-      text: 'Restoring hope, Inspiring talents, & Grooming exceptional, intentional & generational African children while offering support through bringing resources closer to community reach.',
+      text: 'Restoring hope, Inspiring talents, & Grooming an exceptional, intentional & generational African child, while offering support through bringing resources closer to community reach.',
       icon: 'icon-mission' // Placeholder for icon class
     },
     vision: {
