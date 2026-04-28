@@ -19,12 +19,12 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Angular app
-        run: npm run build
+        run: npx ng build mtoto2026 --configuration production
 
-      - name: List dist folder
+      - name: Show dist output
         run: ls -R dist
 
       - name: Deploy to cPanel via FTP
