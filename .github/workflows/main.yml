@@ -35,6 +35,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           protocol: ftps
-          local-dir: dist/mtoto2026/
+          local-dir: dist/mtoto2026/browser/
           server-dir: public_html/
           dangerous-clean-slate: true
