@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mtoto2025": {
+    "mtoto2026": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/mtoto2025",
+            "outputPath": "dist/mtoto2026",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "mtoto2025:build:production"
+              "buildTarget": "mtoto2026:build:production"
             },
             "development": {
-              "buildTarget": "mtoto2025:build:development"
+              "buildTarget": "mtoto2026:build:development"
             }
           },
           "defaultConfiguration": "development"
