@@ -7,7 +7,8 @@ export interface Child {
   livesWith: string;
   numberOfSiblings: number;
   school: string;
-  gender?: string;
-  aspiration?: string;
-  dateOfBirth?: string;
+  gender: string;
+  aspiration: string;
+  dateOfBirth: string;
+  status: string;
 }

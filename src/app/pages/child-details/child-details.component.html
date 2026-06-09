@@ -50,15 +50,15 @@
               <td><strong>Amount:</strong></td>
               <td>USD 50/Month</td>
             </tr>
-            <tr>
+            <tr *ngIf="child.livesWith">
               <td><strong>Lives with:</strong></td>
               <td>{{ child.livesWith }}</td>
             </tr>
-            <tr>
+            <tr *ngIf="child.numberOfSiblings">
               <td><strong>No. of siblings:</strong></td>
               <td>{{ child.numberOfSiblings }}</td>
             </tr>
-            <tr>
+            <tr *ngIf="child.school">
               <td><strong>School:</strong></td>
               <td>{{ child.school }}</td>
             </tr>
