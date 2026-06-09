@@ -133,6 +133,20 @@ export class ChildSponsorshipService {
       aspiration: 'Nurse',
       dateOfBirth: '25/11/2020',
       status: 'unsponsored'
+    },
+    {
+      id: 'MW-010',
+      name: 'Mildred Mazira',
+      yearOfBirth: 2024,
+      picturePath: 'assets/images/students/mildred.jpg',
+      grade: 'Nursery',
+      livesWith: '',
+      numberOfSiblings: 0,
+      school: 'Mtoto W\'Afrika Nursery School',
+      gender: 'Female',
+      aspiration: '',
+      dateOfBirth: '24/02/2024',
+      status: 'unsponsored'
     }
   ];
 
