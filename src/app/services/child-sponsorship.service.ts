@@ -119,6 +119,20 @@ export class ChildSponsorshipService {
       aspiration: 'Teacher',
       dateOfBirth: '14/02/2021',
       status: 'unsponsored'
+    },
+    {
+      id: 'MW-009',
+      name: 'Kengwira Janet',
+      yearOfBirth: 2020,
+      picturePath: 'assets/images/students/janet.jpg',
+      grade: 'Nursery',
+      livesWith: '',
+      numberOfSiblings: 0,
+      school: 'Mtoto W\'Afrika Nursery School',
+      gender: 'Female',
+      aspiration: 'Nurse',
+      dateOfBirth: '25/11/2020',
+      status: 'unsponsored'
     }
   ];
 
