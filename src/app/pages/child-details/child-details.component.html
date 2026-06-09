@@ -30,7 +30,15 @@
               <td><strong>Child's ID:</strong></td>
               <td>{{ child.id }}</td>
             </tr>
-            <tr>
+            <tr *ngIf="child.gender">
+              <td><strong>Gender:</strong></td>
+              <td>{{ child.gender }}</td>
+            </tr>
+            <tr *ngIf="child.dateOfBirth">
+              <td><strong>Date of Birth:</strong></td>
+              <td>{{ child.dateOfBirth }}</td>
+            </tr>
+            <tr *ngIf="!child.dateOfBirth">
               <td><strong>Year of Birth:</strong></td>
               <td>{{ child.yearOfBirth }}</td>
             </tr>
@@ -53,6 +61,10 @@
             <tr>
               <td><strong>School:</strong></td>
               <td>{{ child.school }}</td>
+            </tr>
+            <tr *ngIf="child.aspiration">
+              <td><strong>Aspiration:</strong></td>
+              <td>{{ child.aspiration }}</td>
             </tr>
           </tbody>
         </table>

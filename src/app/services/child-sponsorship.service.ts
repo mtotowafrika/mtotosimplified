@@ -57,6 +57,19 @@ export class ChildSponsorshipService {
       livesWith: 'Parents',
       numberOfSiblings: 2,
       school: 'Luweero Primary School'
+    },
+    {
+      id: 'MW-006',
+      name: 'Christabel Alera',
+      yearOfBirth: 2021,
+      dateOfBirth: '28/02/2021',
+      gender: 'Female',
+      picturePath: 'assets/images/students/christabel.jpg',
+      grade: 'Nursery',
+      livesWith: 'Mother',
+      numberOfSiblings: 1,
+      school: 'Mtoto W\'Afrika Nursery School',
+      aspiration: 'Teacher'
     }
   ];
 
